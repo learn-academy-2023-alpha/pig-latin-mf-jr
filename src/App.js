@@ -9,6 +9,16 @@ const App = () => {
   const [inputTranslated, setInputTranslated] = useState("")
 
   // ACTION ITEM: the "myPigLatinCodeHere" function is where you will put your logic to translate the sentence entered by the user into Pig Latin
+  
+//   Branch: vowel-functionality
+
+// Acceptance Criteria
+
+// Can type any word that begins with a vowel in the text input (e.g. apple)
+// Can hit the submit button
+// Can see the words that begin with a vowel translated to Pig Latin and rendered to the page (e.g. appleway)
+  // Psuedo Code: Create conditional that checked the zero index of each element to determine if it was a vowel, and if so, return the word with the appropriate pig latin suffix, in this case, "way"
+  
   const myPigLatinCodeHere = () => {
 
     // NO MODIFICATION NEEDED: the variable "arrayOfUserInput" will contain the text input from the user split into an array of words
@@ -32,11 +42,11 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-
-    
+      // Psuedo Code: Since the original coding all seemed to be in place, and the program was running, we want to add the conditional that meets the requirements for first letter vowels in pig latin.
+    if(eachWord[0] === vowelsArray[0])
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord
+      return eachWord + ("way")
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
